@@ -276,8 +276,8 @@ class redditplasmoid(plasmascript.Applet):
         if self.debug: print "[reddit-plasmoid] iconClicked"
         
         if len(self.settings["accounts"]) > 0:
-            if self.settings["accounts"][0].data <> None:
-                url = self.settings["accounts"][0].data["url"]
+            if self.settings["accounts"][0].data <> None and len(self.settings["accounts"][0].data) > 0:
+                url = self.settings["accounts"][0].data[0].permalink
             else:
                 url = "http://www.reddit.com"
         else:
@@ -389,29 +389,6 @@ class redditplasmoid(plasmascript.Applet):
             newentries = []
             disp = ""
             msg = ""
-            for ac in self.settings["accounts"]:
-                if ac.intotal:
-                    if ac.data:
-                        fullcount = fullcount + ac.data["fullcount"]
-                if ac.intotal:
-                    if not ac.first and ac.data:
-                        for entry in ac.data["newentries"]:
-                            newentries.append(entry)
-                # NOTE: This is a temporary output, this should be fixed.
-                disp = disp + "<tr><td>"+self.sOut(ac.getDisplayName()+" "*5)+"</td>"
-                if ac.data:
-                    disp = disp + "<td>"+self.sOut(ac.data["fullcount"])+"</td></tr>"
-                else:
-                    disp = disp + "<td>--</td></tr>"
-                # NOTE: This is also a temporary output and should be fixed.
-                if ac.msg <> "":
-                    msg = msg + "<tr><td>"+ac.msg+"</td></tr>"
-            if disp <> "":
-                disp = "<table>" + disp + "</table>"
-            if msg <> "":
-                msg = "<br><table><tr><td><b>"+i18n("Errors:")+"</b></td></tr>" + msg + "</table>"
-            if len(self.settings["accounts"]) <= 1: disp = "" # Don't need account listing if only displaying one account.
-            
             # Fire notification if there are new emails
             if len(newentries) <> 0:
                 if len(newentries) == 1:
@@ -427,35 +404,17 @@ class redditplasmoid(plasmascript.Applet):
                     if self.debug: print "[reddit-plasmoid] Fire no-unread-mail notification"
                     self.fireNotification("no-unread-mail", "No unread messages.")
                     
-            # Update the display
-            self.TotalCount = fullcount
-            if len(self.settings["accounts"]) > 1:
-                self.setUserMessage(i18n("Accounts"), disp+msg)
-            elif len(self.settings["accounts"]) == 1 and self.TotalCount > 0:
+
                 # If there is only one account dispay the threads
                 # FIXME: This display should be modified to look better
-                disp = "<table>"
-                ac = self.settings["accounts"][0]
-                if ac.data <> None and len(ac.data["entries"]) > 0:
-                    for entry in ac.data["entries"]:
-                        if len(entry["authorname"]) < 20:
-                            thread = "["+entry["authorname"]+"] "
-                        else:
-                            thread = "["+entry["authorname"][:27]+"...] "
-                        
-                        #if len(entry["subject"]) + len(thread) < 100:
-                        #    thread += entry["subject"]
-                        #else:
-                        #    thread += entry["subject"][:(97-len(thread))]+"..."
-                            
-                        thread += entry["subject"]
-                        
-                        disp += '<tr><td><p style="margin-left: 50px ; text-indent: -50px;">'+thread+'</p></td></tr>'
-                disp += "</table>"
-                self.setUserMessage(i18n("Threads"), disp+msg)
-            else:
-                # If there are no accounts only display msg
-                self.setUserMessage("", msg)
+            disp = "<table>"
+            ac = self.settings["accounts"][0]
+            if ac.data <> None and len(ac.data) > 0:
+                for entry in ac.data:
+                    
+                    disp += '<tr><td><p style="margin-left: 50px ; text-indent: -50px;">'+str(entry)+'</p></td></tr>'
+            disp += "</table>"
+            self.setUserMessage(i18n("Threads"), disp+msg)
             if len(msg) <> 0: self.error = True
             self.updateIcon()
             
