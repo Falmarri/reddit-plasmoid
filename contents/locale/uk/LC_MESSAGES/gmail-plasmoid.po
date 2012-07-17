@@ -1,0 +1,340 @@
+# Copyright (C) 2009 Mark McCans
+# Цей файл розповсюджується під однієї і тієї ж ліцензії, як Gmail-плазмоід пакет.
+#
+# Mark McCans <mjmccans@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gmail-plasmoid 0.7.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-11 04:14-0400\n"
+"PO-Revision-Date: 2009-05-12 05:33+0500\n"
+"Last-Translator: Nikita \"dragon_djanic\" Bukhvostov <dragon.djanic@gmail."
+"com>\n"
+"Language-Team: none <-->\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Language: uk_UA\n"
+
+#: rc.py:3 rc.py:6
+msgid "Account Details"
+msgstr "Настройки облікового запису"
+
+#: rc.py:9
+msgid "Username:"
+msgstr "Логін:"
+
+#: rc.py:12
+msgid "Password:"
+msgstr "Пароль:"
+
+#: rc.py:15
+msgid "Gmail account password"
+msgstr "Пароль облікового запису Gmail"
+
+#: rc.py:18
+msgid "Label (optional):"
+msgstr "Мітка (не обов'язково):"
+
+#: rc.py:21
+msgid ""
+"Gmail label, such as \"spam\" or \"starred\" (leave this empty for the "
+"standard inbox)"
+msgstr "Мітка Gmail, напр. \"spam\" або \"starred\" (пусто = звичайні вхідні)"
+
+#: rc.py:24
+msgid "Display name (optional):"
+msgstr "Назва (не обов'язково):"
+
+#: rc.py:27
+msgid "User-friendly account name displayed by widget"
+msgstr "Осмислене назву для облікового запису"
+
+#: rc.py:30
+msgid ""
+"If checked unread emails in this account will be included in the new mail "
+"total shown on the widget icon"
+msgstr ""
+"Якщо включити, непрочтенние листа до цього облікового запису будуть "
+"враховуватися в лічильнику на значку елемента керування"
+
+#: rc.py:33
+msgid "Include in total new mail count"
+msgstr "Враховувати при підрахунку нових листів"
+
+#: rc.py:36
+msgid "Gmail username (for hosted domains include \"@hosted-domain.com\")"
+msgstr "Логін Gmail (для власних доменів вкажіть \"@hosted-domain.com\")"
+
+#: rc.py:39
+msgid "&Save"
+msgstr "&Зберегти"
+
+#: rc.py:42
+msgid "&Cancel"
+msgstr "&Відміна"
+
+#: rc.py:45 rc.py:154 rc.py:163
+msgid "gmail-plasmoid Settings"
+msgstr "Налаштування gmail-plasmoid"
+
+#: rc.py:48 code/main.py:463 code/main.py:512
+msgid "Accounts"
+msgstr "Облікові записи"
+
+#: rc.py:51
+msgid "&Add"
+msgstr "&Додати"
+
+#: rc.py:54
+msgid "&Remove"
+msgstr "&Видалити"
+
+#: rc.py:57
+msgid "Move &Up"
+msgstr "Перемістити &вгору"
+
+#: rc.py:60
+msgid "Move &Down"
+msgstr "Перемістити &вниз"
+
+#: rc.py:63
+msgid "Double-click an account to modify it"
+msgstr "Подвійне клацання відкриє налаштування облікового запису"
+
+#: rc.py:66
+msgid "Appearance"
+msgstr "Зовнішній вигляд"
+
+#: rc.py:69
+msgid "Icons:"
+msgstr "Значки:"
+
+#: rc.py:72
+msgid "Text color:"
+msgstr "Колір тексту:"
+
+#: rc.py:75
+msgid "Select the text color for the unread email indicator"
+msgstr "Виберіть колір тексту для індикатора непрочтенних листів"
+
+#: rc.py:78
+msgid "Text font:"
+msgstr "Шрифт:"
+
+#: rc.py:81
+msgid "Text size:"
+msgstr "Розмір тексту:"
+
+#: rc.py:84
+msgid ""
+"Select the text size, as a percentage of the height of the widget, for the "
+"unread email indicator"
+msgstr ""
+"Виберіть розмір тексту (у відсотках від висоти елемента керування) для "
+"індикатора непрочтенних листів"
+
+#: rc.py:87
+msgid "Select the font for the unread email indicator"
+msgstr "Виберіть шрифт для індикатора непрочтенних листів"
+
+#: rc.py:90
+msgid "No Unread Email"
+msgstr "Немає нових листів"
+
+#: rc.py:93
+msgid "Select background icon used when there are no unread messages"
+msgstr "Фоновий значок, відображений при відсутності нових листів"
+
+#: rc.py:96 rc.py:105
+msgid "Use this dropdown if you wish to use one of the default icons"
+msgstr "Використовуйте це меню, щоб вибрати один із стандартних значків"
+
+#: rc.py:99
+msgid "Unread Email"
+msgstr "Нова пошта"
+
+#: rc.py:102
+msgid "Select background icon used when there are unread messages"
+msgstr "Фоновий значок, відображений при наявності нових листів"
+
+#: rc.py:108
+msgid "Misc."
+msgstr "Різне"
+
+#: rc.py:111
+msgid "Polling interval:"
+msgstr "Частота перевірки:"
+
+#: rc.py:114
+msgid "Polling interval in minutes"
+msgstr "Частота звернення до сервера (в хвилинах)"
+
+#: rc.py:117
+msgid " min(s)"
+msgstr " хвилин(и)"
+
+#: rc.py:120
+msgid "Command:"
+msgstr "Команда:"
+
+#: rc.py:124
+#, python-format
+msgid ""
+"Command to run when icon clicked (\"%u\" will be replaced with the url of "
+"the first gmail account configured)"
+msgstr ""
+"Команда, що виконується при натисканні на значку (\"%u\" замінити на URL "
+"самої першої профілю)"
+
+#: rc.py:127
+msgid "Browse..."
+msgstr "Вибрати..."
+
+#: rc.py:130
+msgid "Check network:"
+msgstr ""
+
+#: rc.py:133
+msgid ""
+"Check status of network before checking for email (turn this off if you have "
+"problems with network detection)."
+msgstr ""
+
+#: rc.py:136
+msgid "Debug output:"
+msgstr ""
+
+#: rc.py:139
+msgid "Output debugging details to console"
+msgstr ""
+
+#: rc.py:142
+msgid "Fetching mechanism:"
+msgstr ""
+
+#: rc.py:145
+msgid ""
+"Select the mechanism used to fetch the atom feed (note that \"python\" is "
+"the default, but it does not support authenticating proxies)."
+msgstr ""
+
+#: rc.py:148
+msgid "Python (default)"
+msgstr ""
+
+#: rc.py:151
+msgid "KDE (use KDE internet settings)"
+msgstr ""
+
+#: rc.py:157 code/main.py:522
+msgid "Notifications"
+msgstr "Повідомлення"
+
+#: rc.py:160
+msgid ""
+"To configure notifications please go to the KDE \"Personal Settings,\" "
+"select \"Notifications,\" select \"gmail-plasmoid\" and then modify as "
+"required."
+msgstr ""
+"Щоб налаштувати повідомлення, відкрийте \"Персональні налаштування KDE\", "
+"виберіть\"Повідомлення\", далі \"gmail-plasmoid\", а потім внесіть потрібні "
+"зміни."
+
+#: rc.py:166 code/main.py:527
+msgid "Translations"
+msgstr "Переклади"
+
+#: rc.py:169
+msgid ""
+"Please contact the author if you would like to contribute translations of "
+"this widget:"
+msgstr "Якщо Ви хотіли б допомогти з перекладом, зв'яжіться з автором:"
+
+#: rc.py:172
+msgid "Mark McCans <mjmccans+gmail-plasmoid@gmail.com>"
+msgstr "Марк МакКенз (Mark McCans) <mjmccans+gmail-plasmoid@gmail.com>"
+
+#: code/gmailconfig.py:43 code/gmailconfig.py:45 code/gmailconfig.py:46
+#: code/gmailconfig.py:47 code/gmailconfig.py:48 code/gmailconfig.py:51
+#: code/gmailconfig.py:53 code/gmailconfig.py:54 code/gmailconfig.py:55
+#: code/gmailconfig.py:56
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: code/gmailconfig.py:45 code/gmailconfig.py:53
+msgid "Red"
+msgstr "червоний"
+
+#: code/gmailconfig.py:46 code/gmailconfig.py:54
+msgid "Blue"
+msgstr "синій"
+
+#: code/gmailconfig.py:47 code/gmailconfig.py:55
+msgid "Green"
+msgstr "зелений"
+
+#: code/gmailconfig.py:48 code/gmailconfig.py:56
+msgid "Gray"
+msgstr "сірий"
+
+#: code/main.py:128 code/main.py:166
+msgid "Error"
+msgstr "Помилка"
+
+#: code/main.py:128 code/main.py:166
+msgid "Network connection appears to be down."
+msgstr "Схоже, немає з'єднання з Інтернетом."
+
+#: code/main.py:297
+msgid "Check email now"
+msgstr "Перевірити зараз"
+
+#: code/main.py:303
+msgid "Resume email checking"
+msgstr "Відновити перевірку"
+
+#: code/main.py:305
+msgid "Pause email checking"
+msgstr "Тимчасово не перевіряти"
+
+#: code/main.py:313
+msgid "Threads..."
+msgstr "Бесіди листів..."
+
+#: code/main.py:385
+msgid "No Accounts"
+msgstr "Ні облікових записів"
+
+#: code/main.py:385
+msgid "Please configure some accounts to check."
+msgstr "Налаштуйте облікові записи, які слід перевіряти."
+
+#: code/main.py:442
+msgid "Errors:"
+msgstr "Помилки:"
+
+#: code/main.py:448
+msgid "From"
+msgstr "Від"
+
+#: code/main.py:448
+msgid "Subject"
+msgstr "Тема"
+
+#: code/main.py:450
+msgid "You have <b>%1</b> new message."
+msgid_plural "You have <b>%1</b> new messages."
+msgstr[0] "У вас <b>%1</b> новий лист."
+msgstr[1] "У вас <b>%1</b> нові листи."
+msgstr[2] "У вас <b>%1</b> нових листів."
+
+#: code/main.py:485
+msgid "Threads"
+msgstr "Бесіди листів"
+
+#: code/main.py:546
+msgctxt "@title:window"
+msgid "%1 Settings"
+msgstr ""

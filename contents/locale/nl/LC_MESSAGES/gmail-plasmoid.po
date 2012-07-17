@@ -1,0 +1,340 @@
+# Copyright (C) 2009 Mark McCans
+# This file is distributed under the same license as the gmail-plasmoid package.
+#
+# Mark McCans <mjmccans@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-11 04:14-0400\n"
+"Project-Id-Versie: gmail-plasmoid 0.7.5\n"
+"Raporteer-Msgid-Bugs-Aan: \n"
+"POT-Creatie-Datum: 2009-06-11 08:57-0400\n"
+"PO-Revisie-Datum: 2009-24-10 21:35-0700\n"
+"Laatste-Vertaler: Kees Huiberts <amana@derideal.com>\n"
+"Taal-Groep: None\n"
+"MIME-Versie: 1.0\n"
+"Inhoud-Type: text/plain; charset=UTF-8\n"
+"Inhoud-Transport-versleuteling: 8bit\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: rc.py:3 rc.py:6
+msgid "Account Details"
+msgstr ""
+
+#: rc.py:9
+msgid "Username:"
+msgstr ""
+
+#: rc.py:12
+msgid "Password:"
+msgstr ""
+
+#: rc.py:15
+msgid "Gmail account password"
+msgstr ""
+
+#: rc.py:18
+msgid "Label (optional):"
+msgstr ""
+
+#: rc.py:21
+msgid ""
+"Gmail label, such as \"spam\" or \"starred\" (leave this empty for the "
+"standard inbox)"
+msgstr ""
+
+#: rc.py:24
+msgid "Display name (optional):"
+msgstr ""
+
+#: rc.py:27
+msgid "User-friendly account name displayed by widget"
+msgstr ""
+
+#: rc.py:30
+msgid ""
+"If checked unread emails in this account will be included in the new mail "
+"total shown on the widget icon"
+msgstr ""
+
+#: rc.py:33
+msgid "Include in total new mail count"
+msgstr ""
+
+#: rc.py:36
+msgid "Gmail username (for hosted domains include \"@hosted-domain.com\")"
+msgstr ""
+
+#: rc.py:39
+msgid "&Save"
+msgstr ""
+
+#: rc.py:42
+msgid "&Cancel"
+msgstr ""
+
+#: rc.py:45 rc.py:154 rc.py:163
+msgid "gmail-plasmoid Settings"
+msgstr ""
+
+#: rc.py:48 code/main.py:463 code/main.py:512
+msgid "Accounts"
+msgstr ""
+
+#: rc.py:51
+msgid "&Add"
+msgstr ""
+
+#: rc.py:54
+msgid "&Remove"
+msgstr ""
+
+#: rc.py:57
+msgid "Move &Up"
+msgstr ""
+
+#: rc.py:60
+msgid "Move &Down"
+msgstr ""
+
+#: rc.py:63
+msgid "Double-click an account to modify it"
+msgstr ""
+
+#: rc.py:66
+msgid "Appearance"
+msgstr ""
+
+#: rc.py:69
+msgid "Icons:"
+msgstr ""
+
+#: rc.py:72
+msgid "Text color:"
+msgstr ""
+
+#: rc.py:75
+#, fuzzy
+msgid "Select the text color for the unread email indicator"
+msgstr "Selecteer de tekstkleur voor de ongelezen email indicator"
+
+#: rc.py:78
+msgid "Text font:"
+msgstr ""
+
+#: rc.py:81
+msgid "Text size:"
+msgstr ""
+
+#: rc.py:84
+msgid ""
+"Select the text size, as a percentage of the height of the widget, for the "
+"unread email indicator"
+msgstr ""
+
+#: rc.py:87
+#, fuzzy
+msgid "Select the font for the unread email indicator"
+msgstr "Selecteer de tekstkleur voor de ongelezen email indicator"
+
+#: rc.py:90
+msgid "No Unread Email"
+msgstr ""
+
+#: rc.py:93
+msgid "Select background icon used when there are no unread messages"
+msgstr ""
+
+#: rc.py:96 rc.py:105
+msgid "Use this dropdown if you wish to use one of the default icons"
+msgstr ""
+
+#: rc.py:99
+msgid "Unread Email"
+msgstr ""
+
+#: rc.py:102
+msgid "Select background icon used when there are unread messages"
+msgstr ""
+
+#: rc.py:108
+msgid "Misc."
+msgstr ""
+
+#: rc.py:111
+msgid "Polling interval:"
+msgstr ""
+
+#: rc.py:114
+msgid "Polling interval in minutes"
+msgstr ""
+
+#: rc.py:117
+msgid " min(s)"
+msgstr ""
+
+#: rc.py:120
+msgid "Command:"
+msgstr ""
+
+#: rc.py:124
+#, python-format
+msgid ""
+"Command to run when icon clicked (\"%u\" will be replaced with the url of "
+"the first gmail account configured)"
+msgstr ""
+
+#: rc.py:127
+msgid "Browse..."
+msgstr ""
+
+#: rc.py:130
+msgid "Check network:"
+msgstr ""
+
+#: rc.py:133
+msgid ""
+"Check status of network before checking for email (turn this off if you have "
+"problems with network detection)."
+msgstr ""
+
+#: rc.py:136
+msgid "Debug output:"
+msgstr ""
+
+#: rc.py:139
+msgid "Output debugging details to console"
+msgstr ""
+
+#: rc.py:142
+msgid "Fetching mechanism:"
+msgstr ""
+
+#: rc.py:145
+msgid ""
+"Select the mechanism used to fetch the atom feed (note that \"python\" is "
+"the default, but it does not support authenticating proxies)."
+msgstr ""
+
+#: rc.py:148
+msgid "Python (default)"
+msgstr ""
+
+#: rc.py:151
+msgid "KDE (use KDE internet settings)"
+msgstr ""
+
+#: rc.py:157 code/main.py:522
+msgid "Notifications"
+msgstr ""
+
+#: rc.py:160
+msgid ""
+"To configure notifications please go to the KDE \"Personal Settings,\" "
+"select \"Notifications,\" select \"gmail-plasmoid\" and then modify as "
+"required."
+msgstr ""
+
+#: rc.py:166 code/main.py:527
+msgid "Translations"
+msgstr ""
+
+#: rc.py:169
+msgid ""
+"Please contact the author if you would like to contribute translations of "
+"this widget:"
+msgstr ""
+
+#: rc.py:172
+msgid "Mark McCans <mjmccans+gmail-plasmoid@gmail.com>"
+msgstr ""
+
+#: code/gmailconfig.py:43 code/gmailconfig.py:45 code/gmailconfig.py:46
+#: code/gmailconfig.py:47 code/gmailconfig.py:48 code/gmailconfig.py:51
+#: code/gmailconfig.py:53 code/gmailconfig.py:54 code/gmailconfig.py:55
+#: code/gmailconfig.py:56
+msgid "Default"
+msgstr ""
+
+#: code/gmailconfig.py:45 code/gmailconfig.py:53
+msgid "Red"
+msgstr ""
+
+#: code/gmailconfig.py:46 code/gmailconfig.py:54
+msgid "Blue"
+msgstr ""
+
+#: code/gmailconfig.py:47 code/gmailconfig.py:55
+msgid "Green"
+msgstr ""
+
+#: code/gmailconfig.py:48 code/gmailconfig.py:56
+msgid "Gray"
+msgstr ""
+
+#: code/main.py:128 code/main.py:166
+msgid "Error"
+msgstr ""
+
+#: code/main.py:128 code/main.py:166
+msgid "Network connection appears to be down."
+msgstr ""
+
+#: code/main.py:297
+msgid "Check email now"
+msgstr ""
+
+#: code/main.py:303
+msgid "Resume email checking"
+msgstr ""
+
+#: code/main.py:305
+msgid "Pause email checking"
+msgstr ""
+
+#: code/main.py:313
+msgid "Threads..."
+msgstr ""
+
+#: code/main.py:385
+msgid "No Accounts"
+msgstr ""
+
+#: code/main.py:385
+msgid "Please configure some accounts to check."
+msgstr ""
+
+#: code/main.py:442
+msgid "Errors:"
+msgstr ""
+
+#: code/main.py:448
+msgid "From"
+msgstr ""
+
+#: code/main.py:448
+msgid "Subject"
+msgstr ""
+
+#: code/main.py:450
+msgid "You have <b>%1</b> new message."
+msgid_plural "You have <b>%1</b> new messages."
+msgstr[0] ""
+msgstr[1] ""
+
+#: code/main.py:485
+msgid "Threads"
+msgstr ""
+
+#: code/main.py:546
+msgctxt "@title:window"
+msgid "%1 Settings"
+msgstr ""
+
+#~ msgid "Tekstkleur:"
+#~ msgstr "Tekstkleur:"
+
+#~ msgid "Grijs"
+#~ msgstr "Grijs"

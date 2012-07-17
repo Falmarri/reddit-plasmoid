@@ -1,0 +1,35 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=gmail-plasmoid
+Comment=Check one or more Gmail accounts
+Comment[fr]=Vérifier un ou plusieurs comptes Gmail
+Comment[pl]=Sprawdź jedno lub więcej kont Gmail
+Comment[ru]=Проверяет учетные записи Gmail
+Comment[el]=Έλεγξε έναν ή περισσότερους λογαριασμούς Gmail
+Comment[sr]=Проверавајте један или више Gmail налога
+Comment[de]=Ein oder mehrere Gmail-Konten prüfen
+Comment[zh_TW]=檢查一個或多個Gmail帳戶
+Comment[bg]=Проверка на една или повече Gmail сметки
+Comment[es]=Comprueba una o más cuentas de correo Gmail
+Comment[it]=Controlla uno o più account Gmail
+Comment[cs]=Kontrola jednoho nebo více Gmail účtů
+Comment[uk]=Перевірте один або більше Gmail акаунтів
+Comment[nl]=Controleer een of meer Gmail accounts
+Comment[pt_BR]=Consulte uma ou mais contas do Gmail
+
+Type=Service
+ServiceTypes=Plasma/Applet
+Icon=gmail-plasmoid.svg
+
+X-Plasma-API=python
+X-Plasma-MainScript=code/main.py
+X-KDE-PluginInfo-Author=Mark McCans
+X-KDE-PluginInfo-Email=mjmccans@gmail.com
+X-KDE-PluginInfo-Name=gmail-plasmoid
+X-KDE-PluginInfo-Version=0.7.20
+X-KDE-PluginInfo-Website=http://code.google.com/p/gmail-plasmoid/
+X-KDE-PluginInfo-Category=Online Services
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-NotificationArea=true

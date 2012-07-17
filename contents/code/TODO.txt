@@ -1,0 +1,5 @@
+ToDo:
+- Look into strange caching behaviour of KIO
+- Define polling interval for each account
+- Use ui files for configuration interface
+- Add alternate atom feed download mechanism

@@ -1,0 +1,45 @@
+Dominique Bribanick <chepioq -at- gmail.com> & Anthony Vital <yesmichel -at- gmail.com>
+    - French language translation
+    
+Maciej Warnecki <maciekw5 -at- gmail.com>
+    - Polish language translation
+    
+Andy Mikhailenko <andy -at- neithere.net>
+    - Russian language translation
+
+Menelaos Mamouzellos <mmamouzellos -at- gmail.com>
+    - Greek language translation
+
+Ivan Janjic <wannjanjic -at- gmail.com>
+    - Serbian language translation
+    
+Kai Krakow <hurikhan77 -at- googlemail.com>
+    - German language translation
+    
+Chen Yung Chou <scsichen -at- gmail.com>
+    - Chinese Traditional language translation
+    
+Hitko Ivanov <hitko.ivanov -at- gmail.com>
+    - Bulgarian language translation
+    
+Jose Alcalá <gskbyte -at- gmail.com> & Jose Luis Maturana <matsatzpolatsss -at- gmail.com>
+    - Spanish language translation
+
+Matteo Spinelli <matt3o -at- gmail.com>
+    - Italian language translation
+
+Jan Sobisek <sobik2 -at- gmail.com>
+    - Czech language translation
+    
+Nikita Bukhvostov <dragon.djanic -at- gmail.com>
+    - Ukrainian language translation
+
+Kees Huiberts <amana -at- derideal.com> and Robin Appelman
+    - Dutch language translation
+
+Bruno Menegola <menegola -at- gmail.com>
+    - Brazilian Portuguese translation
+
+Thanks go out to Gilles Chauvin for all the great work he has put into his
+C++ gmailnotifier plasmoid (http://code.google.com/p/gmailnotifier/). His
+code has helped immensely in getting this gmail-plasmoid widget working.

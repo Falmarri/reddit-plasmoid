@@ -1,0 +1,346 @@
+# Copyright (C) 2009 Mark McCans
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Kai Krakow <kai@kaishome.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gmail-plasmoid 0.7.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-11 04:14-0400\n"
+"PO-Revision-Date: 2009-06-07 23:27+0200\n"
+"Last-Translator: Kai Krakow <kai@kaishome.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 0.3\n"
+
+#: rc.py:3 rc.py:6
+msgid "Account Details"
+msgstr "Kontodetails"
+
+#: rc.py:9
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: rc.py:12
+msgid "Password:"
+msgstr "Paßwort:"
+
+#: rc.py:15
+msgid "Gmail account password"
+msgstr "Gmail-Zugangspaßwort"
+
+#: rc.py:18
+msgid "Label (optional):"
+msgstr "Label (optional):"
+
+#: rc.py:21
+msgid ""
+"Gmail label, such as \"spam\" or \"starred\" (leave this empty for the "
+"standard inbox)"
+msgstr ""
+"Gmail label, z.B. \"spam\" oder \"starred\" (leer lassen für den Standard-"
+"Posteingang)"
+
+#: rc.py:24
+msgid "Display name (optional):"
+msgstr "Angezeigter Name (optional):"
+
+#: rc.py:27
+msgid "User-friendly account name displayed by widget"
+msgstr "Vom Widget angezeigte Zugangsbezeichnung"
+
+#: rc.py:30
+msgid ""
+"If checked unread emails in this account will be included in the new mail "
+"total shown on the widget icon"
+msgstr ""
+"Falls markiert, werden ungelesene Nachrichten dieses Kontos in die "
+"Gesamtzahl für neue Nachrichten auf dem Widget-Symbol einbezogen"
+
+#: rc.py:33
+msgid "Include in total new mail count"
+msgstr "In Gesamtzahl für neue Nachrichten einbeziehen"
+
+#: rc.py:36
+msgid "Gmail username (for hosted domains include \"@hosted-domain.com\")"
+msgstr ""
+"Gmail-Benutzername (bei gehosteten Domains \"@hosted-domain.com\" mit "
+"angeben)"
+
+#: rc.py:39
+msgid "&Save"
+msgstr "&Speichern"
+
+#: rc.py:42
+msgid "&Cancel"
+msgstr "Ab&brechen"
+
+#: rc.py:45 rc.py:154 rc.py:163
+msgid "gmail-plasmoid Settings"
+msgstr "gmail-plasmoid Einstellungen"
+
+#: rc.py:48 code/main.py:463 code/main.py:512
+msgid "Accounts"
+msgstr "Konten"
+
+#: rc.py:51
+msgid "&Add"
+msgstr "&Hinzufügen"
+
+#: rc.py:54
+msgid "&Remove"
+msgstr "&Entfernen"
+
+#: rc.py:57
+msgid "Move &Up"
+msgstr "Nach &oben"
+
+#: rc.py:60
+msgid "Move &Down"
+msgstr "Nach &unten"
+
+#: rc.py:63
+msgid "Double-click an account to modify it"
+msgstr "Konto doppelklicken zum Ändern"
+
+#: rc.py:66
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: rc.py:69
+msgid "Icons:"
+msgstr "Symbole:"
+
+#: rc.py:72
+msgid "Text color:"
+msgstr "Schriftfarbe:"
+
+#: rc.py:75
+msgid "Select the text color for the unread email indicator"
+msgstr "Schriftfarbe für Benachrichtigung über ungelesene Nachrichten wählen"
+
+#: rc.py:78
+msgid "Text font:"
+msgstr "Schriftart:"
+
+#: rc.py:81
+msgid "Text size:"
+msgstr "Schriftgröße:"
+
+#: rc.py:84
+msgid ""
+"Select the text size, as a percentage of the height of the widget, for the "
+"unread email indicator"
+msgstr ""
+"Schriftgröße (prozentual zur Höhe des Widgets) für die Benachrichtigung über "
+"ungelesene Nachrichten wählen"
+
+#: rc.py:87
+msgid "Select the font for the unread email indicator"
+msgstr "Schriftart für Benachrichtigung über ungelesene Nachrichten wählen"
+
+#: rc.py:90
+msgid "No Unread Email"
+msgstr "Keine ungelesenen Nachrichten"
+
+#: rc.py:93
+msgid "Select background icon used when there are no unread messages"
+msgstr ""
+"Hintergrundsymbol wählen, falls keine ungelesenen Nachrichten vorhanden sind"
+
+#: rc.py:96 rc.py:105
+msgid "Use this dropdown if you wish to use one of the default icons"
+msgstr "Mit dieser Auswahl kann eines der Standard-Symbole gewählt werden"
+
+#: rc.py:99
+msgid "Unread Email"
+msgstr "Ungelesene Nachricht"
+
+#: rc.py:102
+msgid "Select background icon used when there are unread messages"
+msgstr "Hintergrundsymbol wählen, falls ungelesene Nachrichten vorhanden sind"
+
+#: rc.py:108
+msgid "Misc."
+msgstr "Sonstiges"
+
+#: rc.py:111
+msgid "Polling interval:"
+msgstr "Abrufintervall:"
+
+#: rc.py:114
+msgid "Polling interval in minutes"
+msgstr "Abrufintervall in Minuten"
+
+#: rc.py:117
+msgid " min(s)"
+msgstr " Minute(n)"
+
+#: rc.py:120
+msgid "Command:"
+msgstr "Befehl:"
+
+#: rc.py:124
+#, python-format
+msgid ""
+"Command to run when icon clicked (\"%u\" will be replaced with the url of "
+"the first gmail account configured)"
+msgstr ""
+"Befehl, der ausgeführt wird, wenn das Symbol angeklickt wird (\"%u\" wird "
+"durch die URL des ersten konfigurierten Gmail-Kontos ersetzt)"
+
+#: rc.py:127
+msgid "Browse..."
+msgstr "Durchsuchen..."
+
+#: rc.py:130
+msgid "Check network:"
+msgstr ""
+
+#: rc.py:133
+msgid ""
+"Check status of network before checking for email (turn this off if you have "
+"problems with network detection)."
+msgstr ""
+
+#: rc.py:136
+msgid "Debug output:"
+msgstr ""
+
+#: rc.py:139
+msgid "Output debugging details to console"
+msgstr ""
+
+#: rc.py:142
+msgid "Fetching mechanism:"
+msgstr ""
+
+#: rc.py:145
+msgid ""
+"Select the mechanism used to fetch the atom feed (note that \"python\" is "
+"the default, but it does not support authenticating proxies)."
+msgstr ""
+
+#: rc.py:148
+msgid "Python (default)"
+msgstr ""
+
+#: rc.py:151
+msgid "KDE (use KDE internet settings)"
+msgstr ""
+
+#: rc.py:157 code/main.py:522
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: rc.py:160
+msgid ""
+"To configure notifications please go to the KDE \"Personal Settings,\" "
+"select \"Notifications,\" select \"gmail-plasmoid\" and then modify as "
+"required."
+msgstr ""
+"Um Benachrichtigungen zu konfigurieren, wechseln Sie in die "
+"\"Systemeinstellungen\" von KDE, wählen Sie \"Benachrichtigungen\", dann "
+"\"gmail-plasmoid\" und ändern Sie dort die gewünschten Einstellungen."
+
+#: rc.py:166 code/main.py:527
+msgid "Translations"
+msgstr "Übersetzungen"
+
+#: rc.py:169
+msgid ""
+"Please contact the author if you would like to contribute translations of "
+"this widget:"
+msgstr ""
+"Bitte kontaktieren Sie den Autor, wenn Sie Übersetzungen zu diesem Widget "
+"beitragen möchten:"
+
+#: rc.py:172
+msgid "Mark McCans <mjmccans+gmail-plasmoid@gmail.com>"
+msgstr ""
+
+#: code/gmailconfig.py:43 code/gmailconfig.py:45 code/gmailconfig.py:46
+#: code/gmailconfig.py:47 code/gmailconfig.py:48 code/gmailconfig.py:51
+#: code/gmailconfig.py:53 code/gmailconfig.py:54 code/gmailconfig.py:55
+#: code/gmailconfig.py:56
+msgid "Default"
+msgstr "Standard"
+
+#: code/gmailconfig.py:45 code/gmailconfig.py:53
+msgid "Red"
+msgstr "Rot"
+
+#: code/gmailconfig.py:46 code/gmailconfig.py:54
+msgid "Blue"
+msgstr "Blau"
+
+#: code/gmailconfig.py:47 code/gmailconfig.py:55
+msgid "Green"
+msgstr "Grün"
+
+#: code/gmailconfig.py:48 code/gmailconfig.py:56
+msgid "Gray"
+msgstr "Grau"
+
+#: code/main.py:128 code/main.py:166
+msgid "Error"
+msgstr "Fehler"
+
+#: code/main.py:128 code/main.py:166
+msgid "Network connection appears to be down."
+msgstr "Netzwerkverbindung scheint nicht verfügbar zu sein."
+
+#: code/main.py:297
+msgid "Check email now"
+msgstr "Jetzt Nachrichten prüfen"
+
+#: code/main.py:303
+msgid "Resume email checking"
+msgstr "Nachrichtenprüfung wiederaufnehmen"
+
+#: code/main.py:305
+msgid "Pause email checking"
+msgstr "Nachrichtenprüfung anhalten"
+
+#: code/main.py:313
+msgid "Threads..."
+msgstr "Unterhaltungen..."
+
+#: code/main.py:385
+msgid "No Accounts"
+msgstr "Keine Konten"
+
+#: code/main.py:385
+msgid "Please configure some accounts to check."
+msgstr "Bitte konfigurieren Sie einige zu überwachende Konten"
+
+#: code/main.py:442
+msgid "Errors:"
+msgstr "Fehler:"
+
+#: code/main.py:448
+msgid "From"
+msgstr "Von"
+
+#: code/main.py:448
+msgid "Subject"
+msgstr "Betreff"
+
+#: code/main.py:450
+msgid "You have <b>%1</b> new message."
+msgid_plural "You have <b>%1</b> new messages."
+msgstr[0] "Sie haben <b>%1</b> neue Nachricht."
+msgstr[1] "Sie haben <b>%1</b> neue Nachrichten."
+
+#: code/main.py:485
+msgid "Threads"
+msgstr "Unterhaltungen"
+
+#: code/main.py:546
+msgctxt "@title:window"
+msgid "%1 Settings"
+msgstr ""

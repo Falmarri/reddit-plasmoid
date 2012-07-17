@@ -1,0 +1,352 @@
+# Copyright (C) 2009 Mark McCans
+# This file is distributed under the same license as the gmail-plasmoid package.
+#
+# Mark McCans <mjmccans@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gmail-plasmoid 0.7.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-11 04:14-0400\n"
+"PO-Revision-Date: 2009-06-07 21:06+0200\n"
+"Last-Translator: \n"
+"Language-Team: Serbian <kde-i18n-doc@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 0.3\n"
+
+#: rc.py:3 rc.py:6
+msgid "Account Details"
+msgstr "Детаљи налога"
+
+#: rc.py:9
+msgid "Username:"
+msgstr "Корисничко име:"
+
+#: rc.py:12
+msgid "Password:"
+msgstr "Лозинка:"
+
+#: rc.py:15
+msgid "Gmail account password"
+msgstr "Лозинка Gmail налога"
+
+#: rc.py:18
+msgid "Label (optional):"
+msgstr "Ознака (необевезно):"
+
+#: rc.py:21
+msgid ""
+"Gmail label, such as \"spam\" or \"starred\" (leave this empty for the "
+"standard inbox)"
+msgstr ""
+"Gmail ознаке, као што су \"spam\" or \"starred\" (оставите празно за "
+"стандардно долазно сандуче)"
+
+#: rc.py:24
+msgid "Display name (optional):"
+msgstr "Приказано име (необавезно):"
+
+#: rc.py:27
+msgid "User-friendly account name displayed by widget"
+msgstr "Име налога које ће бити приказано на виџету"
+
+#: rc.py:30
+msgid ""
+"If checked unread emails in this account will be included in the new mail "
+"total shown on the widget icon"
+msgstr ""
+"Aко је штиклирано, непрочитане е-поруке овог налога биће укључене у укупне "
+"нове е-поруке приказане на икони виџета"
+
+#: rc.py:33
+msgid "Include in total new mail count"
+msgstr "Укључи у укупан број нових е-порука"
+
+#: rc.py:36
+msgid "Gmail username (for hosted domains include \"@hosted-domain.com\")"
+msgstr ""
+"Gmail корисничко име (за хостоване домене укључите \"@hostovani-domen.com\")"
+
+#: rc.py:39
+msgid "&Save"
+msgstr "Сачувај"
+
+#: rc.py:42
+msgid "&Cancel"
+msgstr "Одустани"
+
+#: rc.py:45 rc.py:154 rc.py:163
+msgid "gmail-plasmoid Settings"
+msgstr "Поставке за gmail-plasmoid"
+
+#: rc.py:48 code/main.py:463 code/main.py:512
+msgid "Accounts"
+msgstr "Налози"
+
+#: rc.py:51
+msgid "&Add"
+msgstr "Додај"
+
+#: rc.py:54
+msgid "&Remove"
+msgstr "Уклони"
+
+#: rc.py:57
+msgid "Move &Up"
+msgstr "Помери горе"
+
+#: rc.py:60
+msgid "Move &Down"
+msgstr "Помери доле"
+
+#: rc.py:63
+msgid "Double-click an account to modify it"
+msgstr "Дупли клик на налог да би га изменили"
+
+#: rc.py:66
+msgid "Appearance"
+msgstr "Изглед"
+
+#: rc.py:69
+msgid "Icons:"
+msgstr "Иконице:"
+
+#: rc.py:72
+msgid "Text color:"
+msgstr "Боја текста:"
+
+#: rc.py:75
+msgid "Select the text color for the unread email indicator"
+msgstr "Изаберите боју текста показивача непрочитаних е-порука"
+
+#: rc.py:78
+msgid "Text font:"
+msgstr "Фонт текста:"
+
+#: rc.py:81
+msgid "Text size:"
+msgstr "Величина текста:"
+
+#: rc.py:84
+msgid ""
+"Select the text size, as a percentage of the height of the widget, for the "
+"unread email indicator"
+msgstr ""
+"Изаберите величину текста показивача непрочитаних е-порука у процентима "
+"висине виџета"
+
+#: rc.py:87
+msgid "Select the font for the unread email indicator"
+msgstr "Изаберите фонт показивача непрочитаних е-порука"
+
+#: rc.py:90
+msgid "No Unread Email"
+msgstr "Нема непрочитаних е-порука"
+
+#: rc.py:93
+msgid "Select background icon used when there are no unread messages"
+msgstr ""
+"Изаберите позадинску иконицу која ће бити коришћена када нема непрочтаних "
+"порука"
+
+#: rc.py:96 rc.py:105
+msgid "Use this dropdown if you wish to use one of the default icons"
+msgstr ""
+"Користите овај падајући мени ако желите да користите неку од подразумеваних "
+"иконица"
+
+#: rc.py:99
+msgid "Unread Email"
+msgstr "Има непрочитаних е-порука"
+
+#: rc.py:102
+msgid "Select background icon used when there are unread messages"
+msgstr ""
+"Изаберите позадинску иконицу која ће бити коришћена када има непрочтаних "
+"порука"
+
+#: rc.py:108
+msgid "Misc."
+msgstr "Разно"
+
+#: rc.py:111
+msgid "Polling interval:"
+msgstr "Период освежавања:"
+
+#: rc.py:114
+msgid "Polling interval in minutes"
+msgstr "Период освежавања у минутима"
+
+#: rc.py:117
+msgid " min(s)"
+msgstr "Минут(а)"
+
+#: rc.py:120
+msgid "Command:"
+msgstr "Наредба:"
+
+#: rc.py:124
+#, python-format
+msgid ""
+"Command to run when icon clicked (\"%u\" will be replaced with the url of "
+"the first gmail account configured)"
+msgstr ""
+"Наредба која ће бити извршена кликом на иконицу (\"%u\" ће бити замењено УРЛ-"
+"ом првог Gmail налога у листи налога)"
+
+#: rc.py:127
+msgid "Browse..."
+msgstr "Изабери..."
+
+#: rc.py:130
+msgid "Check network:"
+msgstr ""
+
+#: rc.py:133
+msgid ""
+"Check status of network before checking for email (turn this off if you have "
+"problems with network detection)."
+msgstr ""
+
+#: rc.py:136
+msgid "Debug output:"
+msgstr ""
+
+#: rc.py:139
+msgid "Output debugging details to console"
+msgstr ""
+
+#: rc.py:142
+msgid "Fetching mechanism:"
+msgstr ""
+
+#: rc.py:145
+msgid ""
+"Select the mechanism used to fetch the atom feed (note that \"python\" is "
+"the default, but it does not support authenticating proxies)."
+msgstr ""
+
+#: rc.py:148
+msgid "Python (default)"
+msgstr ""
+
+#: rc.py:151
+msgid "KDE (use KDE internet settings)"
+msgstr ""
+
+#: rc.py:157 code/main.py:522
+msgid "Notifications"
+msgstr "Обавештења"
+
+#: rc.py:160
+msgid ""
+"To configure notifications please go to the KDE \"Personal Settings,\" "
+"select \"Notifications,\" select \"gmail-plasmoid\" and then modify as "
+"required."
+msgstr ""
+"Да подесите обавештења идите у KDE \"Системске поставке\", одаберите "
+"\"Обавештења\", затим \"gmail-plasmoid\" и промените по вољи."
+
+#: rc.py:166 code/main.py:527
+msgid "Translations"
+msgstr "Преводи"
+
+#: rc.py:169
+msgid ""
+"Please contact the author if you would like to contribute translations of "
+"this widget:"
+msgstr ""
+"Молимо Вас да контактирате аутора ако желите да допринесете преводу овог "
+"виџета:"
+
+#: rc.py:172
+msgid "Mark McCans <mjmccans+gmail-plasmoid@gmail.com>"
+msgstr "Mark McCans <mjmccans+gmail-plasmoid@gmail.com>"
+
+#: code/gmailconfig.py:43 code/gmailconfig.py:45 code/gmailconfig.py:46
+#: code/gmailconfig.py:47 code/gmailconfig.py:48 code/gmailconfig.py:51
+#: code/gmailconfig.py:53 code/gmailconfig.py:54 code/gmailconfig.py:55
+#: code/gmailconfig.py:56
+msgid "Default"
+msgstr "Подразумевано"
+
+#: code/gmailconfig.py:45 code/gmailconfig.py:53
+msgid "Red"
+msgstr "Црвено"
+
+#: code/gmailconfig.py:46 code/gmailconfig.py:54
+msgid "Blue"
+msgstr "Плаво"
+
+#: code/gmailconfig.py:47 code/gmailconfig.py:55
+msgid "Green"
+msgstr "Зелено"
+
+#: code/gmailconfig.py:48 code/gmailconfig.py:56
+msgid "Gray"
+msgstr "Сиво"
+
+#: code/main.py:128 code/main.py:166
+msgid "Error"
+msgstr "Грешка"
+
+#: code/main.py:128 code/main.py:166
+msgid "Network connection appears to be down."
+msgstr "Изгледа да нема мрежне конекције."
+
+#: code/main.py:297
+msgid "Check email now"
+msgstr "Провери е-пошту"
+
+#: code/main.py:303
+msgid "Resume email checking"
+msgstr "Поново укључи проверу е-поште"
+
+#: code/main.py:305
+msgid "Pause email checking"
+msgstr "Паузирај проверу е-поште"
+
+#: code/main.py:313
+msgid "Threads..."
+msgstr "Непрочитано..."
+
+#: code/main.py:385
+msgid "No Accounts"
+msgstr "Нема налога"
+
+#: code/main.py:385
+msgid "Please configure some accounts to check."
+msgstr "Молим подесите бар један налог."
+
+#: code/main.py:442
+msgid "Errors:"
+msgstr "Грешке:"
+
+#: code/main.py:448
+msgid "From"
+msgstr "Од"
+
+#: code/main.py:448
+msgid "Subject"
+msgstr "Тема"
+
+#: code/main.py:450
+msgid "You have <b>%1</b> new message."
+msgid_plural "You have <b>%1</b> new messages."
+msgstr[0] "Имате <b>%1</b> нову поруку."
+msgstr[1] ""
+msgstr[2] ""
+
+#: code/main.py:485
+#, fuzzy
+msgid "Threads"
+msgstr "Непрочитано"
+
+#: code/main.py:546
+msgctxt "@title:window"
+msgid "%1 Settings"
+msgstr ""
