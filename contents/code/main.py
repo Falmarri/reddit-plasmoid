@@ -277,9 +277,9 @@ class redditplasmoid(plasmascript.Applet):
             if self.settings["accounts"][0].data <> None:
                 url = self.settings["accounts"][0].data["url"]
             else:
-                url = "https://mail.google.com/mail/"
+                url = "http://www.reddit.com"
         else:
-            url = "https://mail.google.com/mail/"
+            url = "http://www.reddit.com"
         
         # Replace '%u' with url
         cmd = unicode(self.settings["command"])

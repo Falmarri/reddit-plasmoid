@@ -209,7 +209,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>reddit-plasmoid icon</dc:title>
+        <dc:title>gmail-plasmoid icon</dc:title>
         <dc:creator>
           <cc:Agent>
             <dc:title>Mark McCans</dc:title>
@@ -217,7 +217,7 @@
         </dc:creator>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
-        <dc:description>Icon created for the reddit-plasmoid widget (http://code.google.com/p/gmail-plasmoid/).</dc:description>
+        <dc:description>Icon created for the gmail-plasmoid widget (http://code.google.com/p/gmail-plasmoid/).</dc:description>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/by/3.0/">

@@ -17,12 +17,10 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 from PyQt4.QtCore import *
-from PyKDE4.kio import *
+from PyKDE4.kio import * 
 from PyKDE4.kdecore import *
-from reddit import Reddit
+from reddit_api import Reddit
 import urllib2
-
-from reddit import Reddit
 
 class redditaccount(QObject):
     def __init__(self, fetchmechanism="python", username="", passwd="", label="", displayname="", intotal=True, debug=False):
@@ -83,10 +81,13 @@ class redditaccount(QObject):
             
             # Get the atom feed
 
-            self.unread = self.red.user.get_unread()
+            self.data = self.unread = list(self.red.user.get_unread())
             
             self.fetching = False
+            if self.debug: print self.data
             self.SignalObject.emit(SIGNAL("checkMailDone"), self)
+            self.first = False
+        
     
     # --- Get/Set Functions --- #
     
@@ -108,5 +109,5 @@ class redditaccount(QObject):
     
     
 if __name__ == '__main__':
-    r = redditaccount(username = "falmarri" , passwd = "")
+    r = redditaccount(username = "falmarri" , passwd = "", debug=True)
     r.checkMail()

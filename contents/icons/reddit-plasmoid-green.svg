@@ -15,7 +15,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="gmail-plasmoid-new2.svg"
+   sodipodi:docname="gmail-plasmoid-green.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <defs
      id="defs4996">
@@ -40,13 +40,13 @@
     <linearGradient
        id="linearGradient3379">
       <stop
-         style="stop-color:#ae0506;stop-opacity:1;"
+         style="stop-color:#05ae06;stop-opacity:1;"
          offset="0"
          id="stop3381" />
       <stop
          id="stop3564"
          offset="1"
-         style="stop-color:#d25757;stop-opacity:0.94117647;" />
+         style="stop-color:#57d257;stop-opacity:0.94117647;" />
       <stop
          style="stop-color:#ae0505;stop-opacity:0;"
          offset="1"
@@ -55,13 +55,13 @@
     <linearGradient
        id="linearGradient3371">
       <stop
-         style="stop-color:#fce3e3;stop-opacity:1;"
+         style="stop-color:#e3fce3;stop-opacity:1;"
          offset="0"
          id="stop3373" />
       <stop
          id="stop3440"
          offset="1"
-         style="stop-color:#c34848;stop-opacity:1;" />
+         style="stop-color:#48c348;stop-opacity:1;" />
       <stop
          style="stop-color:#fce3e3;stop-opacity:0;"
          offset="1"
@@ -135,8 +135,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.5566668"
-     inkscape:cx="154.78095"
+     inkscape:zoom="3.6156729"
+     inkscape:cx="103.47653"
      inkscape:cy="72.925329"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -151,7 +151,7 @@
      gridtolerance="10000"
      guidetolerance="10000"
      inkscape:snap-global="true"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      inkscape:object-paths="true"
      inkscape:object-nodes="true"
@@ -163,7 +163,7 @@
     <inkscape:grid
        type="xygrid"
        id="grid5537"
-       visible="true"
+       visible="false"
        enabled="true"
        spacingx="1px"
        spacingy="1px"
@@ -209,7 +209,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>reddit-plasmoid icon</dc:title>
+        <dc:title>gmail-plasmoid icon</dc:title>
         <dc:creator>
           <cc:Agent>
             <dc:title>Mark McCans</dc:title>
@@ -217,7 +217,7 @@
         </dc:creator>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
-        <dc:description>Icon created for the reddit-plasmoid widget (http://code.google.com/p/gmail-plasmoid/).</dc:description>
+        <dc:description>Icon created for the gmail-plasmoid widget (http://code.google.com/p/gmail-plasmoid/).</dc:description>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/by/3.0/">
@@ -242,7 +242,7 @@
        sodipodi:nodetypes="ccccccccc"
        id="path3317"
        d="M 10.999171,17.144364 L 140.99917,17.144364 C 145.88299,17.144364 150.99917,20.581753 150.99917,27.144363 L 150.99917,127.14436 C 150.99917,133.70696 145.88299,137.14436 140.99917,137.14436 L 10.999171,137.14436 C 6.1153611,137.14436 0.99917108,134.03338 0.99917108,127.14436 L 0.99917108,27.144363 C 0.99917108,20.581753 6.1153611,17.144364 10.999171,17.144364 z"
-       style="fill:url(#linearGradient3325);fill-opacity:1;fill-rule:evenodd;stroke:#ae0505;stroke-width:0.49999979;stroke-miterlimit:4;stroke-opacity:1" />
+       style="fill:url(#linearGradient3325);fill-opacity:1;fill-rule:evenodd;stroke:#05ae05;stroke-width:0.49999979000000000;stroke-miterlimit:4;stroke-opacity:1" />
     <path
        sodipodi:nodetypes="ccccsccc"
        id="path3306"
@@ -252,24 +252,24 @@
        sodipodi:nodetypes="ccccccccc"
        id="rect5004"
        d="M 11,17 L 141,17 C 145.88382,17 151,20.437387 151,27 L 151,127 C 151,133.5626 145.88382,137 141,137 L 11,137 C 6.1161882,137 1,133.88902 1,127 L 1,27 C 1,20.437387 6.116187,17 11,17 z"
-       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ae0505;stroke-width:0.49999979;stroke-miterlimit:4;stroke-opacity:1" />
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#05ae05;stroke-width:0.49999979000000000;stroke-miterlimit:4;stroke-opacity:1" />
     <path
-       style="fill:url(#linearGradient3271);fill-opacity:1;fill-rule:evenodd;stroke:#ae0505;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#linearGradient3271);fill-opacity:1;fill-rule:evenodd;stroke:#05ae05;stroke-width:0.49999997000000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 11,27 L 11,36.992992 L 76,91.205532 L 141,37.038865 L 141,27 L 11,27 z"
        id="path5541"
        sodipodi:nodetypes="cccccc" />
     <path
-       style="fill:url(#linearGradient3287);fill-opacity:1;fill-rule:evenodd;stroke:#ae0505;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#linearGradient3287);fill-opacity:1;fill-rule:evenodd;stroke:#05ae05;stroke-width:0.49999997000000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 11,46.972686 L 56,84.5 L 11,122 L 11,46.972686 z"
        id="path5543"
        sodipodi:nodetypes="cccc" />
     <path
-       style="fill:url(#linearGradient3295);fill-opacity:1;fill-rule:evenodd;stroke:#ae0505;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#linearGradient3295);fill-opacity:1;fill-rule:evenodd;stroke:#05ae05;stroke-width:0.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 141,47.007055 L 96,84.507055 L 141,122 L 141,47.007055 z"
        id="path5545"
        sodipodi:nodetypes="cccc" />
     <path
-       style="fill:url(#linearGradient3279);fill-opacity:1;fill-rule:evenodd;stroke:#ae0505;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#linearGradient3279);fill-opacity:1;fill-rule:evenodd;stroke:#05ae05;stroke-width:0.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 62.016388,89.486343 L 17,127 L 135,127 L 90.004233,89.503528 L 76,101.17372 L 62.016388,89.486343 z"
        id="path5547"
        sodipodi:nodetypes="cccccc" />
