@@ -1,0 +1,5 @@
+To Install:
+
+From this directory
+
+plasmapkg -r reddit-plasmoid.plasmoid && zip -r ../reddit-plasmoid.plasmoid . -x \*.svn\* -x \*docs\* -x \*.directory\* && plasmapkg -i ../reddit-plasmoid.plasmoid
