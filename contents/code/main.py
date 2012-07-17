@@ -26,9 +26,11 @@ from PyKDE4.kio import *
 from PyKDE4.solid import *
 
 import sys, os, commands, glob, time, pickle
+#sys.stdout = open("/home/dknapp/reddit.log", "w")
 from reddit import redditaccount
 
 from redditconfig import RedditConfig
+
 
 
 class redditplasmoid(plasmascript.Applet):
@@ -98,11 +100,11 @@ class redditplasmoid(plasmascript.Applet):
         
         # Make sure all elements required exist
         for ac in self.settings["accountlist"]:
-            if not ac.has_key("username"): ac["username"] == ""
-            if not ac.has_key("passwd"): ac["passwd"] == ""    
-            if not ac.has_key("label"): ac["label"] == ""
-            if not ac.has_key("displayname"): ac["displayname"] == ""
-            if not ac.has_key("intotal"): ac["intotal"] == True
+            if not ac.has_key("username"): ac["username"] = ""
+            if not ac.has_key("passwd"): ac["passwd"] = ""    
+            if not ac.has_key("label"): ac["label"] = ""
+            if not ac.has_key("displayname"): ac["displayname"] = ""
+            if not ac.has_key("intotal"): ac["intotal"] = True
         
         # Create the gmailaccount objects
         self.createAccountObjects()
@@ -311,36 +313,6 @@ class redditplasmoid(plasmascript.Applet):
         threadsAction = QAction(KIcon("zoom-in"), i18n("Threads..."), self)
         #threadsAction = QAction(KIcon(self.package().path() + "contents/icons/threads.svg"), "Threads...", self)
         threadsMenu = QMenu(self.obj)
-        for ac in self.settings["accounts"]:
-            accountAction = QAction(KIcon("mail-receive"), ac.getDisplayName(), self)
-            
-            if ac.data <> None and len(ac.data["entries"]) > 0:
-                accountMenu = QMenu(self.obj)
-                for entry in ac.data["entries"]:
-                    msg = ""
-                    if len(entry["authorname"]) < 20:
-                        msg = "["+entry["authorname"]+"] "
-                    else:
-                        msg = "["+entry["authorname"][:27]+"...] "
-                    
-                    if len(entry["subject"]) + len(msg) < 100:
-                        msg = msg + entry["subject"]
-                    else:
-                        msg = msg + entry["subject"][:(97-len(msg))]+"..."
-                    
-                    accountMenu.addAction(KIcon("mail-mark-unread"), msg)
-                    #accountMenu.addAction(KIcon(self.package().path() + "contents/icons/reddit-plasmoid.svg"), msg)
-                    
-                if len(self.settings["accounts"]) > 1:
-                    accountAction.setMenu(accountMenu)
-                else:
-                    threadsAction.setMenu(accountMenu)
-            
-            if len(self.settings["accounts"]) > 1:
-                threadsMenu.addAction(accountAction)
-        
-        if len(self.settings["accounts"]) > 1:
-            threadsAction.setMenu(threadsMenu)
         
         newActions.append(threadsAction)
         return newActions
@@ -653,7 +625,7 @@ class redditplasmoid(plasmascript.Applet):
         c.append("Name[cs]=Přijmutí Nového Emailu\n")
         c.append("Name[uk]=Отримано нова пошта\n")
         c.append("Name[nl]=U heeft nieuwe mail\n")
-	c.append("Name[pt_BR]=Novos e-mails disponíveis\n")
+        c.append("Name[pt_BR]=Novos e-mails disponíveis\n")
         c.append("Sound=KDE-Im-New-Mail.ogg\n")
         c.append("Action=Popup|Sound\n")
         c.append("\n")

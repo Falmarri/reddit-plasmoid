@@ -23,7 +23,7 @@ from reddit_api import Reddit
 import urllib2
 
 class redditaccount(QObject):
-    def __init__(self, fetchmechanism="python", username="", passwd="", label="", displayname="", intotal=True, debug=False):
+    def __init__(self, fetchmechanism="python", username="", passwd="", label="", displayname="", intotal=True, debug=True):
         QObject.__init__(self)
         
         # Store data
