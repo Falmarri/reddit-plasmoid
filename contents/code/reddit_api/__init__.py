@@ -653,15 +653,17 @@ class LoggedInExtension(BaseReddit):
         elif not username and self.config.user:
             pswd = self.config.pswd
         else:
-            import getpass
-            pswd = password or getpass.getpass('Password for %s: ' % user)
+            return
+            #import getpass
+            #pswd = password or getpass.getpass('Password for %s: ' % user)
 
         params = {'passwd': pswd,
                   'user': user}
         response = self.request_json(self.config['login'] % user, params)
         self.modhash = response['data']['modhash']
-        self.user = self.get_redditor(user)
-        self.user.__class__ = objects.LoggedInRedditor
+        if self.modhash is not None:
+            self.user = self.get_redditor(user)
+            self.user.__class__ = objects.LoggedInRedditor
 
 
 class Reddit(LoggedInExtension,  # pylint: disable-msg=R0904
