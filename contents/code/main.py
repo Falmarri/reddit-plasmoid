@@ -111,9 +111,6 @@ class redditplasmoid(plasmascript.Applet):
         
         # Initialize variables
         self.TotalCount = None
-        self.mail = None # remove this
-        self.settings["passwd"] = "" # remove this
-        self.atomFeed = ""
         self.fetching = False
         self.paused = False
         self.error = False
@@ -273,21 +270,24 @@ class redditplasmoid(plasmascript.Applet):
             self.checkMail()
     
     def iconClicked(self):
-        if self.debug: print "[reddit-plasmoid] iconClicked"
-        
-        if len(self.settings["accounts"]) > 0:
-            if self.settings["accounts"][0].data <> None and len(self.settings["accounts"][0].data) > 0:
-                url = self.settings["accounts"][0].data[0].permalink
-            else:
-                url = "http://www.reddit.com"
-        else:
-            url = "http://www.reddit.com"
-        
-        # Replace '%u' with url
-        cmd = unicode(self.settings["command"])
-        cmd = cmd.replace("%u", url)
-        if self.debug: print "[reddit-plasmoid] Run command: "+cmd
-        KRun.runCommand(cmd, None)
+        pass
+    
+    
+#        if self.debug: print "[reddit-plasmoid] iconClicked"
+#        
+#        if len(self.settings["accounts"]) > 0:
+#            if self.settings["accounts"][0].data <> None and len(self.settings["accounts"][0].data) > 0:
+#                url = self.settings["accounts"][0].data[0].permalink
+#            else:
+#                url = "http://www.reddit.com"
+#        else:
+#            url = "http://www.reddit.com"
+#        
+#        # Replace '%u' with url
+#        cmd = unicode(self.settings["command"])
+#        cmd = cmd.replace("%u", url)
+#        if self.debug: print "[reddit-plasmoid] Run command: "+cmd
+#        KRun.runCommand(cmd, None)
 
     def contextualActions(self):
         # Add custom context menus
@@ -409,12 +409,13 @@ class redditplasmoid(plasmascript.Applet):
                 # FIXME: This display should be modified to look better
             disp = "<table>"
             ac = self.settings["accounts"][0]
-            if ac.data <> None and len(ac.data) > 0:
+            self.TotalCount = len(ac.data)
+            if ac.data is not None and len(ac.data) > 0:
                 for entry in ac.data:
                     
-                    disp += '<tr><td><p style="margin-left: 50px ; text-indent: -50px;">'+str(entry)+'</p></td></tr>'
+                    disp += '<tr><td>'+str(entry)+'</td></tr>'
             disp += "</table>"
-            self.setUserMessage(i18n("Threads"), disp+msg)
+            self.setUserMessage(i18n("Messages"), disp+msg)
             if len(msg) <> 0: self.error = True
             self.updateIcon()
             
@@ -450,7 +451,7 @@ class redditplasmoid(plasmascript.Applet):
         
             
     def isKDEVersion(self, a, b, c):
-      return (version() >= (a << 16) + (b << 8) + c)
+        return (version() >= (a << 16) + (b << 8) + c)
     
     def showConfigurationInterface(self):
         # KDE 4.4 and above
@@ -524,7 +525,8 @@ class redditplasmoid(plasmascript.Applet):
         
         # Reset the timer and check mail (if not paused)
         if not self.paused:
-            self.checkMail()
+            self.timer.start()
+            #self.checkMail()
         
         self.updateIcon()
 
