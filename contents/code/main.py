@@ -27,10 +27,8 @@ from PyKDE4.solid import *
 
 import sys, os, commands, glob, time, pickle
 #sys.stdout = open("/home/dknapp/reddit.log", "w")
-from reddit import redditaccount
-
 from redditconfig import RedditConfig
-
+from reddit_api import Reddit
 
 
 class redditplasmoid(plasmascript.Applet):
@@ -82,7 +80,7 @@ class redditplasmoid(plasmascript.Applet):
         else:
             # Update if the version string does not match
             ver = self.fixType(gc.readEntry("reddit-plasmoid.notifyrc", "0"))
-            if ver <> vers["reddit-plasmoid.notifyrc"]:
+            if ver != vers["reddit-plasmoid.notifyrc"]:
                 if self.debug: print "[reddit-plasmoid] Update .notifyrc file..."
                 self.createNotifyrc(kdehome, vers)
                 
@@ -94,23 +92,10 @@ class redditplasmoid(plasmascript.Applet):
             self.settings["textfont"] = unicode(font.family())
             paint = None
         
-        # Load account list
-        self.settings["accountlist"] = pickle.loads(str(self.fixType(gc.readEntry("accountlist", pickle.dumps([])))))
-        self.settings["accounts"] = []
-        
-        # Make sure all elements required exist
-        for ac in self.settings["accountlist"]:
-            if not ac.has_key("username"): ac["username"] = ""
-            if not ac.has_key("passwd"): ac["passwd"] = ""    
-            if not ac.has_key("label"): ac["label"] = ""
-            if not ac.has_key("displayname"): ac["displayname"] = ""
-            if not ac.has_key("intotal"): ac["intotal"] = True
         
         # Create the gmailaccount objects
-        self.createAccountObjects()
         
         # Initialize variables
-        self.TotalCount = None
         self.fetching = False
         self.paused = False
         self.error = False
@@ -141,7 +126,7 @@ class redditplasmoid(plasmascript.Applet):
         # Get password from kwallet (async to avoid blocking)
         # NOTE: The wid and the value for async opening should be done better
         self.wallet = KWallet.Wallet.openWallet(KWallet.Wallet.LocalWallet(), 0, KWallet.Wallet.Asynchronous)
-        if self.wallet <> None:
+        if self.wallet is not None:
             self.connect(self.wallet, SIGNAL("walletOpened(bool)"), self.walletOpened)
         else:
             # KWallet service is disabled, start checking for emails if connected
@@ -210,7 +195,7 @@ class redditplasmoid(plasmascript.Applet):
             over = KIconLoader.loadIcon(loader, self.package().path() + "contents/icons/paused.svg", KIconLoader.NoGroup, size/3, KIconLoader.DefaultState, "", "", True)
             paint.drawPixmap(size*0.66,size*0.66,over)
         
-        if self.TotalCount <> None and self.TotalCount <> 0:
+        if self.TotalCount is not None and self.TotalCount != 0:
             # Set the font
             font = QFont(self.settings["textfont"])
             size = (pix.width() * self.settings["textsize"]) / 100
@@ -261,7 +246,7 @@ class redditplasmoid(plasmascript.Applet):
                     passwd = self.wallet.readPassword(self.settings["accounts"][i].username)[1]
                 except:
                     self.wallet.readPassword(self.settings["accounts"][i].username, passwd)
-                    print "[reddit-plasmoid] wallet.readPassword error:", sys.exc_info()[0]
+                    
                 self.settings["accounts"][i].setPasswd(unicode(passwd))
                 self.settings["accountlist"][i]["passwd"] = unicode(passwd)
         
@@ -498,20 +483,19 @@ class redditplasmoid(plasmascript.Applet):
         # Open kwallet (synchronous style)
         # NOTE: As above, the wid sent to the wallet is not correct.
         wallet = KWallet.Wallet.openWallet(KWallet.Wallet.LocalWallet(), 0)
-        if wallet <> None:
+        if wallet is not None:
             if not wallet.hasFolder("reddit-plasmoid"):
                 wallet.createFolder("reddit-plasmoid")
             wallet.setFolder("reddit-plasmoid")
             
             # Create account array without passwords and save it to file
-            tmpaclist = []
-            for ac in self.settings["accountlist"]:
-                tmpac = ac.copy()
-                tmpac["passwd"] = ""
-                tmpaclist.append(tmpac)
-                # Write passwords to wallet while going through list
-                wallet.writePassword(ac["username"], ac["passwd"])
-            gc.writeEntry("accountlist", pickle.dumps(tmpaclist))
+
+            ac = self.settings["account"]
+            tmpac = ac.copy()
+            tmpac["passwd"] = ""
+            # Write passwords to wallet while going through list
+            wallet.writePassword(ac["username"], ac["passwd"])
+            gc.writeEntry("accountlist", pickle.dumps(tmpac))
         else:
             # KWallet disabled, save passwords to config file
             gc.writeEntry("accountlist", pickle.dumps(self.settings["accountlist"]))
@@ -534,13 +518,11 @@ class redditplasmoid(plasmascript.Applet):
         self.redditconfig.deleteLater()
         
     def createAccountObjects(self):
-        self.settings["accounts"] = []
-        for ac in self.settings["accountlist"]:
-            if self.debug: print "[reddit-plasmoid] create account"
-            acobj = redditaccount(self.settings["fetchmechanism"], ac["username"], ac["passwd"], ac["label"], ac["displayname"], ac["intotal"], self.debug)
-            self.settings["accounts"].append(acobj)
-            # Note: Always connect when account object is created.
-            self.connect(acobj.getSingalObject(), SIGNAL("checkMailDone"), self.readAccountData)
+        if self.debug: print "[reddit-plasmoid] create account"
+        acobj = Reddit(user_agent="reddit-plasmoid")
+        self.settings["account"] = acobj
+        # Note: Always connect when account object is created.
+        #self.connect(acobj.getSingalObject(), SIGNAL("checkMailDone"), self.readAccountData)
         
     #
     # ---------- End Configuration ----------
@@ -552,7 +534,7 @@ class redditplasmoid(plasmascript.Applet):
                 os.mkdir(d)
             except:
                 print "[reddit-plasmoid] Problem creating directory: "+d
-                print "[reddit-plasmoid] Unexpected error:", sys.exc_info()[0]
+                
     
     def createNotifyrc(self, kdehome, vers):
         # Output the notifyrc file to the correct location
@@ -618,7 +600,7 @@ class redditplasmoid(plasmascript.Applet):
             gc.writeEntry("reddit-plasmoid.notifyrc", vers["reddit-plasmoid.notifyrc"])
         except:
             print "[reddit-plasmoid] Problem writing to file: "+fn
-            print "[reddit-plasmoid] Unexpected error:", sys.exc_info()[0]
+            
  
 def CreateApplet(parent):
     return redditplasmoid(parent)
